@@ -1,0 +1,7 @@
+morango
+pitaya
+laranja
+maracuja
+banana
+maçã
+coco
