@@ -51,3 +51,11 @@ function holidayButton(string){
 }
 
 holidayButton('Feriados');
+
+
+// Exercício 3
+const clickHolidayButton = document.getElementById('btn-holiday');
+clickHolidayButton.addEventListener('click', function(
+  let selectedHoliday = 
+  if()
+));
