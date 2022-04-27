@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#header, #form {
+    background-color: rgb(241, 241, 241);
+    border-radius: 20px;
+    margin: 20px 10%;
+}
+
+#header {
+    padding: 20px;
+    width: 740px;
+}
+
+h1 {
+    color: rgb(54, 54, 54);
+}
+
+#form {
+    padding: 30px;
+    width: 720px;
+}
+
+.smallSection {
+    width: 600px;
+}
