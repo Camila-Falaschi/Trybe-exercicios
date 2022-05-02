@@ -10,58 +10,60 @@
 <body>
     <header id="header">
         <h1>Concurso TrybeTrip</h1>
-        <button id="clear">Limpar</button>
+        <input type="reset" id="clear" class="button" value="Limpar">
     </header>
     <main>
-        <form id="form"> <!--para o desenvolvimento do forms foi consultado as documentações no MDN (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) e (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)-->
-            <div class="smallSection">
-                <p>Venha concorrer a uma viagem totalmente paga e com várias opções de destino!<br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt pretium odio sit amet mollis. Curabitur vel odio fermentum, pharetra ligula eu, ultricies est.
-                </p>
-            </div>
-            <div class="smallSection">
-                <label for="input-name">Nome Completo:
-                    <input type="text" id="input-name" name="name" placeholder="Digite o seu nome" min="10" max="40" required>
-                </label>
-            </div>
-            <div class="smallSection">
-                <label for="input-email">E-mail:
-                    <input type="email" id="input-email" name="email" placeholder="Digite o seu e-mail" min="10" max="50" required>
-                </label>
-            </div>
-            <div class="smallSection">
-                <fieldset>
-                    <legend>Destino Preferido</legend>
-                    <label for="city">
-                        <input type="radio" id="city" name="destination" value="cidade">Cidade
+        <form class="form" action="" method="get"> <!--para o desenvolvimento do forms foi consultado as documentações no MDN (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) e (https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)-->
+            <div class="form-row">
+                <div class="smallSection">
+                    <p>Venha concorrer a uma viagem totalmente paga e com várias opções de destino!<br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt pretium odio sit amet mollis. Curabitur vel odio fermentum, pharetra ligula eu, ultricies est.
+                    </p>
+                </div>
+                <div class="smallSection">
+                    <label for="input-name">Nome Completo:<br>
+                        <input type="text" id="input-name" name="name" placeholder="Digite o seu nome" min="10" max="40" required>
                     </label>
-                    <label for="contryside">
-                        <input type="radio" id="contryside" name="destination" value="campo">Campo
+                </div>
+                <div class="smallSection">
+                    <label for="input-email">E-mail:<br>
+                        <input type="email" id="input-email" name="email" placeholder="Digite o seu e-mail" min="10" max="50" required>
                     </label>
-                    <label for="beach">
-                        <input type="radio" id="beach" name="destination" value="praia">Praia
+                </div>
+                <div class="smallSection">
+                    <fieldset>
+                        <legend>Destino Preferido</legend>
+                        <label for="city">
+                            <input type="radio" id="city" name="destination" value="cidade">Cidade
+                        </label>
+                        <label for="contryside">
+                            <input type="radio" id="contryside" name="destination" value="campo">Campo
+                        </label>
+                        <label for="beach">
+                            <input type="radio" id="beach" name="destination" value="praia">Praia
+                        </label>
+                        <label for="montains">
+                            <input type="radio" id="montains" name="destination" value="montanhas">Montanhas
+                        </label>
+                    </fieldset>
+                </div>
+                <div class="smallSection">
+                    <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+                    <textarea name="answer" id="answerText" cols="30" rows="5" maxlength="500" placeholder="Digite a sua resposta."></textarea>
+                </div>
+                <div class="smallSection">
+                    <label for="input-date">Qual a melhor data para realizar sua viagem?<br>
+                        <input type="date" id="input-date" name="travel-date" min="2022-05-27" max="2023-04-30">
                     </label>
-                    <label for="montains">
-                        <input type="radio" id="montains" name="destination" value="montanhas">Montanhas
-                    </label>
-                </fieldset>
-            </div>
-            <div class="smallSection">
-                <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
-                <textarea name="answer" id="answerText" cols="30" rows="5" maxlength="500" placeholder="Digite a sua resposta."></textarea>
-            </div>
-            <div class="smallSection">
-                <label for="input-date">Qual a melhor data para realizar sua viagem?
-                    <input type="date" id="input-date" name="travel-date" min="2022-05-27" max="2023-04-30">
-                </label>
-            </div>
-            <div class="smallSection">
-                    <input type="checkbox" name="opportunities" id="permissions">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
-                    <input type="checkbox" name="photos-usage" id="photo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
-            </div>
-            <div class="smallSection">
-                <button type="submit">Enviar</button>
-            </div>
+                </div>
+                <div class="smallSection">
+                        <input type="checkbox" name="opportunities" id="permissions">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?<br>
+                        <input type="checkbox" name="photos-usage" id="photo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+                </div>
+                <div class="smallSection">
+                    <button type="submit" class="button">Enviar</button>
+                </div>
+            </div> 
         </form>
     </main>
     <script src="scripts.js"></script>
